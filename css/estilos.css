@@ -1,0 +1,336 @@
+@keyframes animation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+body {
+    background-color: #020202;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+.contenedor1 {
+    background: url(../img/fondo3.jpg) center/cover no-repeat;
+    width: 120%;
+    height: 120vh;
+    margin: -10% 0 0 -10%;
+    position: absolute;
+    z-index: 800;
+    opacity: 1;
+    display: none;
+}
+
+.contenedor2 {
+    background: url(../img/fondo.jpg) center/cover no-repeat;
+    width: 120%;
+    height: 120vh;
+    margin: -10% 0 0 -10%;
+    position: absolute;
+    z-index: 700;
+    display: none;
+}
+
+.monja {
+    display: none;
+    width: 832px;
+    height: 730px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -416px;
+    margin-top: -365px;
+    z-index: 900;
+    overflow: hidden;
+}
+
+.difusa {
+    filter: blur(5px);
+    transform: scale(0.8);
+    -webkit-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+}
+
+.torso {
+
+    width: 832px;
+    height: 730px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -416px;
+    margin-top: -365px;
+    background-image: url(../img/monja2.png);
+
+
+
+    z-index: 2;
+}
+
+.ojos {
+    width: 832px;
+    height: 701px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -425px;
+    margin-top: -351px;
+    background-image: url(../img/ojos2.png);
+    z-index: 1;
+}
+
+.text {
+    position: absolute;
+    left: 50%;
+    width: 320px;
+    margin-left: -150px;
+    bottom: 5%;
+
+    height: auto;
+    font-size: 33px;
+    font-family: 'Tangerine', cursive;
+
+    color: #FFF;
+    z-index: 950;
+}
+
+.text1,
+.text2 {
+    display: none;
+}
+
+.cruz {
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    width: 25px;
+    height: 45px;
+    display: none;
+    z-index: 1000;
+    -webkit-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+}
+
+.cruz:hover {
+    transform: rotate(180deg);
+    -webkit-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+    cursor: pointer;
+}
+
+.giro {
+    transform: rotate(45deg) !important;
+}
+
+.equis {
+    height: 25px !important;
+}
+
+.negro {
+    background-color: #020202 !important;
+    -webkit-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.linea-horizontal {
+    width: 100%;
+    height: 5px;
+    margin-top: 15px;
+    background-color: #000;
+        
+-webkit-box-shadow: 0 0 2px 2px #FFFFFF;
+box-shadow: 0 0 2px 2px #FFFFFF;
+    -webkit-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+}
+
+.linea-vertical {
+    width: 5px;
+    height: 100%;
+    margin-left: 10px;
+    margin-top: -15px;
+    background-color: #000;
+    
+    -webkit-box-shadow: 0 0 2px 2px #FFFFFF;
+box-shadow: 0 0 2px 2px #FFFFFF;
+    -webkit-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+}
+
+.info {
+    width: 100%;
+    height: 100vh;
+    background-color: #E8E8E8;
+    display: none;
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+
+    left: 0px;
+
+
+    z-index: 990;
+    -webkit-box-shadow: inset 0 0 80px 20px #020202;
+    box-shadow: inset 0 0 80px 20px #020202;
+
+}
+
+.texto {
+    width: 760px;
+    height: 500px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -380px;
+}
+
+.texto h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Tangerine', cursive;
+    color: #020202;
+}
+
+.texto p {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #020202;
+}
+
+.texto img {
+    margin: auto;
+    display: block;
+}
+
+.enlace {
+    width: 200px;
+    margin: auto;
+}
+
+.texto a {
+    color: #020202;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cruz2 {
+    width: 20px;
+    height: 30px;
+    margin: auto;
+    animation: animation 8s infinite;
+}
+
+.lh {
+    width: 100%;
+    height: 4px;
+    background-color: #606060;
+    margin-top: 20px;
+
+}
+
+.lv {
+    width: 4px;
+    height: 100%;
+    background-color: #606060;
+    margin-left: 8px;
+    margin-top: -13px;
+}
+
+
+@media only screen and (max-width: 760px) {
+   
+    
+   
+.texto {
+    width: 480px;
+   margin-left: -240px;
+}
+    
+    
+  
+}
+
+
+@media only screen and (max-width: 480px) {
+   .contenedor1 {
+    width: 100%;
+    height: 100vh;
+    margin: -10% 0 0 -10%;
+    position: absolute;
+    z-index: 800;
+    opacity: 1;
+    display: none;
+}
+
+.contenedor2 {
+    background: url(../img/fondo.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin: -10% 0 0 -10%;
+    position: absolute;
+    z-index: 700;
+    display: none;
+}
+    
+    
+    .info {
+   
+    height: 100%;
+    position: static;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+    background-color: #E8E8E8;
+    display: none;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 990;
+    -webkit-box-shadow: inset 0 0 80px 20px #020202;
+    box-shadow: inset 0 0 80px 20px #020202;
+}
+
+.texto {
+    width: 320px;
+    height: auto;
+    margin: auto;
+    position: static;
+   
+}
+    
+    
+    .monja {
+        transform: scale(0.6);
+    }
+}
